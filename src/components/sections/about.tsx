@@ -25,10 +25,8 @@ export default function About() {
                   Computer Engineering Student
                 </p>
                 <p className="mt-4 text-muted-foreground">
-                  I'm a Computer Engineering student driven by a passion for learning new
-                  technologies and applying them to real-world projects. Eager to
-                  continuously grow and contribute, I thrive on bringing innovative
-                  solutions to life.
+                  I&apos;m a passionate developer with a love for creating clean,
+                  efficient, and user-friendly web applications.
                 </p>
               </div>
               <div className="mt-8">

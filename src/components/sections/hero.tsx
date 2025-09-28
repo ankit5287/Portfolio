@@ -11,8 +11,7 @@ export default function Hero() {
             <TypewriterEffect text="Ankit Nandoliya" />
           </h1>
           <p className="mx-auto max-w-3xl text-lg text-muted-foreground">
-            Hello! I&apos;m a passionate developer with a love for creating
-            clean, efficient, and user-friendly web applications.
+            I'm a Computer Engineering student driven by a passion for learning new technologies and applying them to real-world projects. Eager to continuously grow and contribute, I thrive on bringing innovative solutions to life.
           </p>
         </div>
       </div>
