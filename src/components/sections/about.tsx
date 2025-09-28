@@ -15,10 +15,10 @@ const skills = [
 
 export default function About() {
   return (
-    <section id="about" className="bg-muted/50 py-16 md:py-24">
+    <section id="about" className="py-16 md:py-24">
       <div className="container mx-auto max-w-5xl px-4">
         <ScrollAnimation>
-          <Card className="shadow-lg transition-transform duration-500 ease-in-out hover:scale-105">
+          <Card className="bg-transparent shadow-lg transition-transform duration-500 ease-in-out hover:scale-105">
             <CardContent className="p-8">
               <div className="text-left">
                 <p className="mt-1 text-lg text-accent-foreground">

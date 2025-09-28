@@ -11,13 +11,13 @@ const education = {
 
 export default function Education() {
   return (
-    <section id="education" className="bg-background py-16 md:py-24">
+    <section id="education" className="py-16 md:py-24">
       <div className="container mx-auto max-w-5xl px-4">
         <h2 className="mb-8 text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           <TypewriterEffect text="Education" />
         </h2>
         <ScrollAnimation>
-          <Card className="shadow-lg transition-transform duration-500 ease-in-out hover:scale-105">
+          <Card className="bg-transparent shadow-lg transition-transform duration-500 ease-in-out hover:scale-105">
             <CardContent className="p-8">
               <div className="flex items-center gap-4">
                 <School className="h-10 w-10 text-primary" />

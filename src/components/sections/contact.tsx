@@ -58,14 +58,14 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-muted/50 py-16 md:py-24">
+    <section id="contact" className="py-16 md:py-24">
       <div className="container mx-auto max-w-5xl px-4">
         <h2 className="mb-8 text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           <TypewriterEffect text="Get In Touch" />
         </h2>
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <ScrollAnimation>
-            <Card className="shadow-lg">
+            <Card className="bg-transparent shadow-lg">
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
               </CardHeader>
