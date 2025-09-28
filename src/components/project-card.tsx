@@ -32,7 +32,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <div className="flex w-full space-x-2">
           {project.githubUrl && (
             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="w-full">
-              <Button variant="outline" className="w-full">
+              <Button className="w-full bg-foreground text-background hover:bg-foreground/90">
                 <Github />
                 Source Code
               </Button>
