@@ -152,7 +152,7 @@ export default function Contact() {
                     </a>
                   </ScrollAnimation>
                   <ScrollAnimation delay={600}>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/ankit_n2?igsh=ZWhwaDB2N2JrZ2xw" target="_blank" rel="noopener noreferrer">
                       <Button variant="outline" size="icon" className="transition-transform duration-500 ease-in-out hover:scale-110">
                         <Instagram className="h-5 w-5" />
                          <span className="sr-only">Instagram</span>
