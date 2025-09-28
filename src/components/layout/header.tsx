@@ -5,7 +5,6 @@ import { Code2, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { ModeToggle } from '@/components/mode-toggle';
 
 const navLinks = [
   { href: '#hero', label: 'Home' },
@@ -52,10 +51,8 @@ export default function Header() {
           {navLinks.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
-          <ModeToggle />
         </nav>
         <div className="flex items-center gap-2 md:hidden">
-          <ModeToggle />
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
