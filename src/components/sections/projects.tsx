@@ -11,6 +11,13 @@ const projects = [
     githubUrl: '#',
   },
   {
+    id: '5',
+    title: 'Studiova',
+    longDescription: 'A web application built with Django, featuring a robust backend with the Django admin panel and SQLite3 for database management. It includes secure user authentication with login and sign-up functionality, providing a seamless user experience.',
+    liveUrl: '#',
+    githubUrl: '#',
+  },
+  {
     id: '1',
     title: 'E-Commerce Platform',
     longDescription: 'A full-featured e-commerce platform built with Next.js, Stripe for payments, and a custom CMS for product management. It includes user authentication, order tracking, and a responsive design for a seamless shopping experience on any device. The architecture is designed for scalability and performance, using server-side rendering for fast initial page loads.',
