@@ -1,16 +1,19 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Code, Database, Cpu, Milestone, Component } from 'lucide-react';
+import { Code, Database, Cpu, Milestone, Component, Server } from 'lucide-react';
 import ScrollAnimation from '../scroll-animation';
 import TypewriterEffect from '../typewriter-effect';
 
 const skills = [
   { name: 'Java', icon: <Code /> },
+  { name: 'Python', icon: <Code /> },
+  { name: 'Django', icon: <Server /> },
+  { name: 'C Programming', icon: <Cpu /> },
+  { name: 'C++', icon: <Code /> },
   { name: 'Data Structures & Algorithms', icon: <Milestone /> },
   { name: 'DBMS', icon: <Database /> },
   { name: 'HTML', icon: <Code /> },
   { name: 'CSS', icon: <Component /> },
-  { name: 'C Programming', icon: <Cpu /> },
 ];
 
 export default function About() {
@@ -25,8 +28,7 @@ export default function About() {
                   Computer Engineering Student
                 </p>
                 <p className="mt-4 text-muted-foreground">
-                  I&apos;m a passionate developer with a love for creating clean,
-                  efficient, and user-friendly web applications.
+                  As a CE student, I possess fundamental knowledge in a range of programming and database technologies. My skills include Python and Django, HTML, CSS, Java, C/C++, and DBMS. I am driven to translate this comprehensive technical toolkit into practical, innovative projects.
                 </p>
               </div>
               <div className="mt-8">
