@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 
 type Project = {
@@ -28,14 +28,8 @@ export default function ProjectCard({ project }: { project: Project }) {
         </p>
       </CardContent>
       <CardFooter className="flex flex-col items-start gap-4">
-        <div className="flex w-full space-x-2">
-           <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
-            <Button variant="outline" className="w-full">
-              <ExternalLink />
-              Live Site
-            </Button>
-          </a>
-          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+        <div className="flex w-full justify-center">
+          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="w-full">
             <Button variant="outline" className="w-full">
               <Github />
               Source Code
