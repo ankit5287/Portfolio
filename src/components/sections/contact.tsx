@@ -8,7 +8,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Github, Linkedin, Mail, Twitter, Loader2 } from 'lucide-react';
+import { Github, Linkedin, Mail, Loader2 } from 'lucide-react';
 import { handleContactForm } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
 import { useState } from 'react';
@@ -148,14 +148,6 @@ export default function Contact() {
                       <Button variant="outline" size="icon" className="transition-transform duration-500 ease-in-out hover:scale-110">
                         <Linkedin className="h-5 w-5" />
                          <span className="sr-only">LinkedIn</span>
-                      </Button>
-                    </a>
-                  </ScrollAnimation>
-                  <ScrollAnimation delay={600}>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" size="icon" className="transition-transform duration-500 ease-in-out hover:scale-110">
-                        <Twitter className="h-5 w-5" />
-                         <span className="sr-only">Twitter</span>
                       </Button>
                     </a>
                   </ScrollAnimation>
