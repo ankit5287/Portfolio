@@ -8,8 +8,8 @@ import { cn } from '@/lib/utils';
 import { ModeToggle } from '@/components/mode-toggle';
 
 const navLinks = [
+  { href: '#hero', label: 'Home' },
   { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
 ];
