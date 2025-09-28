@@ -24,20 +24,6 @@ const projects = [
     liveUrl: '#',
     githubUrl: '#',
   },
-  {
-    id: '2',
-    title: 'Task Management App',
-    longDescription: 'A collaborative task management application designed for teams. It features real-time updates using WebSockets, drag-and-drop functionality for task boards, and a comprehensive notification system. Built with React and a Node.js backend, it helps teams stay organized and productive.',
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    id: '3',
-    title: 'Data Visualization Dashboard',
-    longDescription: 'An analytics dashboard for visualizing complex datasets. It uses D3.js and React to create interactive charts and graphs, allowing users to explore data and gain insights. The backend processes large volumes of data and provides a fast API for the frontend to consume.',
-    liveUrl: '#',
-githumbUrl: '#',
-  },
 ];
 
 export default function Projects() {
