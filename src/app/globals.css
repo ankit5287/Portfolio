@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --background: 300 6% 90%;
-    --foreground: 78 22% 14%;
+    --foreground: 77 78% 10%;
     --card: 0 0% 100%;
     --card-foreground: 210 10% 23%;
     --popover: 0 0% 100%;
@@ -40,10 +40,10 @@
   }
   .dark {
     --background: 210 10% 10%;
-    --foreground: 78 22% 69%;
+    --foreground: 77 33% 85%;
     --card: 210 10% 15%;
     --card-foreground: 78 22% 69%;
-    --primary: 76 33% 81%;
+    --primary: 77 33% 85%;
     --primary-foreground: 210 10% 10%;
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
@@ -85,4 +85,16 @@
 }
 
 @layer utilities {
+  .glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary)),
+        0 0 15px hsl(var(--primary));
+    }
+    to {
+      text-shadow: 0 0 2px hsl(var(--primary)), 0 0 5px hsl(var(--primary));
+    }
+  }
 }
