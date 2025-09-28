@@ -1,4 +1,6 @@
 import ProjectCard from '@/components/project-card';
+import ScrollAnimation from '../scroll-animation';
+import TypewriterEffect from '../typewriter-effect';
 
 const projects = [
   {
@@ -29,11 +31,13 @@ export default function Projects() {
     <section id="projects" className="py-16 md:py-24">
       <div className="container mx-auto max-w-5xl px-4">
         <h2 className="mb-8 text-center text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          My Projects
+          <TypewriterEffect text="My Projects" />
         </h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {projects.map((project, index) => (
+            <ScrollAnimation key={project.id} delay={index * 200}>
+              <ProjectCard project={project} />
+            </ScrollAnimation>
           ))}
         </div>
       </div>
