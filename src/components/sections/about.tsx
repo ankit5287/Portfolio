@@ -25,11 +25,10 @@ export default function About() {
                   Computer Engineering Student
                 </p>
                 <p className="mt-4 text-muted-foreground">
-                  A Computer Engineering student with foundational knowledge in Java, Data
-                  Structures & Algorithms (DSA), Database Management Systems (DBMS), HTML,
-                  CSS, and C. I am passionate about building efficient and user-friendly
-                  applications and eager to apply my developing skills to real-world
-                  projects.
+                  I'm a Computer Engineering student driven by a passion for learning new
+                  technologies and applying them to real-world projects. Eager to
+                  continuously grow and contribute, I thrive on bringing innovative
+                  solutions to life.
                 </p>
               </div>
               <div className="mt-8">
