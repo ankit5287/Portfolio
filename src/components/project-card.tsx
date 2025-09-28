@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { BrainCircuit, ExternalLink, Github, Loader2 } from 'lucide-react';
@@ -36,18 +35,6 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   return (
     <Card className="flex h-full flex-col overflow-hidden transition-shadow hover:shadow-xl">
-      {project.image && (
-        <div className="aspect-w-3 aspect-h-2 w-full">
-            <Image
-                src={project.image.imageUrl}
-                alt={project.image.description}
-                width={600}
-                height={400}
-                className="object-cover"
-                data-ai-hint={project.image.imageHint}
-            />
-        </div>
-      )}
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
       </CardHeader>
