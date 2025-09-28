@@ -137,7 +137,7 @@ export default function Contact() {
                 <div className="flex space-x-4">
                   <ScrollAnimation delay={400}>
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" size="icon" className="transition-transform duration-300 hover:scale-110">
+                      <Button variant="outline" size="icon" className="transition-transform duration-500 ease-in-out hover:scale-110">
                         <Github className="h-5 w-5" />
                         <span className="sr-only">GitHub</span>
                       </Button>
@@ -145,7 +145,7 @@ export default function Contact() {
                   </ScrollAnimation>
                   <ScrollAnimation delay={500}>
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" size="icon" className="transition-transform duration-300 hover:scale-110">
+                      <Button variant="outline" size="icon" className="transition-transform duration-500 ease-in-out hover:scale-110">
                         <Linkedin className="h-5 w-5" />
                          <span className="sr-only">LinkedIn</span>
                       </Button>
@@ -153,7 +153,7 @@ export default function Contact() {
                   </ScrollAnimation>
                   <ScrollAnimation delay={600}>
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" size="icon" className="transition-transform duration-300 hover:scale-110">
+                      <Button variant="outline" size="icon" className="transition-transform duration-500 ease-in-out hover:scale-110">
                         <Twitter className="h-5 w-5" />
                          <span className="sr-only">Twitter</span>
                       </Button>

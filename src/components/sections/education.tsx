@@ -17,7 +17,7 @@ export default function Education() {
           <TypewriterEffect text="Education" />
         </h2>
         <ScrollAnimation>
-          <Card className="shadow-lg transition-transform duration-300 hover:scale-105">
+          <Card className="shadow-lg transition-transform duration-500 ease-in-out hover:scale-105">
             <CardContent className="p-8">
               <div className="flex items-center gap-4">
                 <School className="h-10 w-10 text-primary" />
