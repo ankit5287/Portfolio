@@ -26,11 +26,12 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const NavLink = ({ href, label, onClick }: { href: string; label: string; onClick?: () => void }) => (
+  const NavLink = ({ href, label, onClick, delay }: { href: string; label: string; onClick?: () => void, delay?: number }) => (
     <a
       href={href}
       onClick={onClick}
-      className="text-muted-foreground transition-colors hover:text-foreground"
+      className="text-muted-foreground transition-all duration-300 hover:text-foreground hover:scale-110"
+      style={{ animationDelay: `${delay}ms`}}
     >
       {label}
     </a>
@@ -40,7 +41,7 @@ export default function Header() {
     <header
       className={cn(
         'sticky top-0 z-50 w-full border-b border-transparent transition-all duration-300',
-        isScrolled ? 'border-border bg-background/80 backdrop-blur-sm' : ''
+        isScrolled ? 'border-border bg-background/80 backdrop-blur-xl' : ''
       )}
     >
       <div className="container mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
@@ -48,7 +49,7 @@ export default function Header() {
           <Code2 className="h-6 w-6 text-primary" />
           <span>Ankit Nandoliya</span>
         </a>
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
@@ -61,7 +62,7 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right">
+            <SheetContent side="right" className="w-[250px] bg-background/95 backdrop-blur-xl">
               <div className="flex h-full flex-col">
                 <div className="flex items-center justify-between border-b pb-4">
                    <a href="#" className="flex items-center gap-2 font-bold text-lg" onClick={() => setIsMobileMenuOpen(false)}>
@@ -76,8 +77,14 @@ export default function Header() {
                   </SheetTrigger>
                 </div>
                 <nav className="mt-8 flex flex-col gap-6">
-                  {navLinks.map((link) => (
-                    <NavLink key={link.href} {...link} onClick={() => setIsMobileMenuOpen(false)} />
+                  {navLinks.map((link, index) => (
+                     <div key={link.href} className={cn('opacity-0 animate-fade-in-up', isMobileMenuOpen && 'opacity-100')}>
+                      <NavLink
+                        {...link}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        delay={index * 100 + 100}
+                      />
+                    </div>
                   ))}
                 </nav>
               </div>
