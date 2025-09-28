@@ -17,7 +17,7 @@ export default function ScrollAnimation({
   children,
   animation = 'fadeInUp',
   className,
-  delay = 0,
+  delay = 300,
   triggerOnce = true,
 }: ScrollAnimationProps) {
   const [isVisible, setIsVisible] = useState(false);
@@ -62,7 +62,7 @@ export default function ScrollAnimation({
         isVisible && animationClasses[animation],
         className
       )}
-      style={{ animationDelay: `${delay}ms` }}
+      style={{ animationDelay: `${delay}ms`, animationDuration: '1s' }}
     >
       {children}
     </div>
