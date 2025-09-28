@@ -136,19 +136,19 @@ export default function Contact() {
                 </a>
                 <div className="flex space-x-4">
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="icon">
+                    <Button variant="outline" size="icon" className="transition-transform duration-300 hover:scale-110">
                       <Github className="h-5 w-5" />
                       <span className="sr-only">GitHub</span>
                     </Button>
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="icon">
+                    <Button variant="outline" size="icon" className="transition-transform duration-300 hover:scale-110">
                       <Linkedin className="h-5 w-5" />
                        <span className="sr-only">LinkedIn</span>
                     </Button>
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="icon">
+                    <Button variant="outline" size="icon" className="transition-transform duration-300 hover:scale-110">
                       <Twitter className="h-5 w-5" />
                        <span className="sr-only">Twitter</span>
                     </Button>

@@ -18,7 +18,7 @@ export default function About() {
     <section id="about" className="bg-muted/50 py-16 md:py-24">
       <div className="container mx-auto max-w-5xl px-4">
         <ScrollAnimation>
-          <Card className="shadow-lg">
+          <Card className="shadow-lg transition-transform duration-300 hover:scale-105">
             <CardContent className="p-8">
               <div className="text-left">
                 <p className="mt-1 text-lg text-accent-foreground">
@@ -39,7 +39,7 @@ export default function About() {
                 <div className="mt-4 flex flex-wrap gap-2">
                   {skills.map((skill, index) => (
                      <ScrollAnimation key={skill.name} delay={index * 100}>
-                      <Badge variant="secondary" className="gap-2 px-3 py-1 text-sm">
+                      <Badge variant="secondary" className="gap-2 px-3 py-1 text-sm transition-transform duration-300 hover:scale-110">
                         {skill.icon}
                         {skill.name}
                       </Badge>

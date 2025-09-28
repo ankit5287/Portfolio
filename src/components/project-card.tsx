@@ -18,7 +18,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   const [summary] = useState('');
 
   return (
-    <Card className="flex h-full flex-col overflow-hidden transition-shadow hover:shadow-xl">
+    <Card className="flex h-full flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
       </CardHeader>
