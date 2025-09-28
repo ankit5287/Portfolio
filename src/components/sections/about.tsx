@@ -7,7 +7,7 @@ export default function About() {
       <div className="container mx-auto max-w-5xl px-4">
         <div className="text-center">
           <h2 className="mb-4 font-mono text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            About Me
+            Ankit Nandoliya
           </h2>
           <p className="mx-auto max-w-3xl text-lg text-muted-foreground">
             Hello! I&apos;m a passionate developer with a love for creating clean, efficient, and user-friendly web applications. With a background in modern frontend technologies and a keen eye for design, I strive to build digital experiences that are both beautiful and functional.
