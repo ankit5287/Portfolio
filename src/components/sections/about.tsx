@@ -18,7 +18,6 @@ export default function About() {
         <Card className="shadow-lg">
           <CardContent className="p-8">
             <div className="text-left">
-              <h2 className="text-3xl font-bold text-primary">Ankit Nandoliya</h2>
               <p className="mt-1 text-lg text-accent-foreground">
                 Computer Engineering Student
               </p>
