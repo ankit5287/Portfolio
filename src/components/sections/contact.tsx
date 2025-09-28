@@ -136,7 +136,7 @@ export default function Contact() {
                 </a>
                 <div className="flex space-x-4">
                   <ScrollAnimation delay={400}>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/ankit5287" target="_blank" rel="noopener noreferrer">
                       <Button variant="outline" size="icon" className="transition-transform duration-500 ease-in-out hover:scale-110">
                         <Github className="h-5 w-5" />
                         <span className="sr-only">GitHub</span>

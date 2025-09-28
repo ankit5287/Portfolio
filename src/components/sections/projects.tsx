@@ -8,21 +8,21 @@ const projects = [
     title: 'Student Management System',
     longDescription: 'A comprehensive student management system built with Java, featuring full CRUD (Create, Read, Update, Delete) operations. This desktop application provides an intuitive interface for managing student records, including personal details, course enrollment, and grades. It showcases robust data handling and a clean, object-oriented architecture.',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/ankit5287',
   },
   {
     id: '5',
     title: 'Studiova',
     longDescription: 'A web application built with Django, featuring a robust backend with the Django admin panel and SQLite3 for database management. It includes secure user authentication with login and sign-up functionality, providing a seamless user experience.',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/ankit5287',
   },
   {
     id: '3',
     title: 'Bank Link Integrated Service',
     longDescription: 'Developed a secure web application that uses AI for real-time transaction analysis and classification after linking to user bank data. This FinTech service provides predictive financial insights through an intuitive, modern interface.',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/ankit5287',
   },
 ];
 
