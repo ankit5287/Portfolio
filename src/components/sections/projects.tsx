@@ -18,9 +18,9 @@ const projects = [
     githubUrl: '#',
   },
   {
-    id: '1',
-    title: 'E-Commerce Platform',
-    longDescription: 'A full-featured e-commerce platform built with Next.js, Stripe for payments, and a custom CMS for product management. It includes user authentication, order tracking, and a responsive design for a seamless shopping experience on any device. The architecture is designed for scalability and performance, using server-side rendering for fast initial page loads.',
+    id: '3',
+    title: 'Bank Link Integrated Service',
+    longDescription: 'Developed a secure web application that uses AI for real-time transaction analysis and classification after linking to user bank data. This FinTech service provides predictive financial insights through an intuitive, modern interface.',
     liveUrl: '#',
     githubUrl: '#',
   },
