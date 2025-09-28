@@ -23,7 +23,7 @@ export default function Hero() {
           <ScrollAnimation delay={400}>
             <div className="mt-8 flex justify-center gap-4">
               <a href="#projects">
-                <Button>
+                <Button className="bg-foreground text-background hover:bg-foreground/90">
                   <Briefcase className="mr-2" /> Projects
                 </Button>
               </a>
