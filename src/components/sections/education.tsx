@@ -5,8 +5,8 @@ import TypewriterEffect from '../typewriter-effect';
 
 const education = {
   degree: 'Bachelor of Engineering in Computer Engineering',
-  institution: 'Government Engineering College, Gandhinagar',
-  period: '2021 - 2025',
+  institution: 'SAL Institute of Technology & Engineering Research',
+  period: '2023 - 2027',
 };
 
 export default function Education() {
