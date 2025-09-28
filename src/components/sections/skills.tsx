@@ -1,13 +1,17 @@
-import { Progress } from '@/components/ui/progress';
+import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const skills = [
-  { name: 'React & Next.js', level: 90 },
-  { name: 'TypeScript', level: 85 },
-  { name: 'Node.js', level: 80 },
-  { name: 'UI/UX Design', level: 75 },
-  { name: 'Firebase', level: 88 },
-  { name: 'Tailwind CSS', level: 95 },
+  'React',
+  'Next.js',
+  'TypeScript',
+  'Node.js',
+  'UI/UX Design',
+  'Firebase',
+  'Tailwind CSS',
+  'JavaScript',
+  'HTML5',
+  'CSS3',
 ];
 
 export default function Skills() {
@@ -24,17 +28,16 @@ export default function Skills() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div className="flex flex-wrap justify-center gap-3">
               {skills.map((skill) => (
-                <div key={skill.name}>
-                  <div className="mb-2 flex justify-between">
-                    <span className="font-medium text-foreground">{skill.name}</span>
-                    <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                  </div>
-                  <Progress value={skill.level} aria-label={`${skill.name} proficiency`} />
-                </div>
+                <Badge key={skill} variant="secondary" className="px-4 py-2 text-lg">
+                  {skill}
+                </Badge>
               ))}
             </div>
+            <p className="mt-6 text-center text-muted-foreground">
+              I am always learning and expanding my skillset to stay current with the latest technologies.
+            </p>
           </CardContent>
         </Card>
       </div>

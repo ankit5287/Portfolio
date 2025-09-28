@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import TypewriterEffect from '@/components/typewriter-effect';
 
 export default function About() {
   return (
@@ -7,7 +6,7 @@ export default function About() {
       <div className="container mx-auto max-w-5xl px-4">
         <div className="text-center">
           <h2 className="mb-4 font-mono text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Ankit Nandoliya
+            <TypewriterEffect text="Ankit Nandoliya" />
           </h2>
           <p className="mx-auto max-w-3xl text-lg text-muted-foreground">
             Hello! I&apos;m a passionate developer with a love for creating clean, efficient, and user-friendly web applications. With a background in modern frontend technologies and a keen eye for design, I strive to build digital experiences that are both beautiful and functional.
