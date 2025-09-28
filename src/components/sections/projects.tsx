@@ -4,6 +4,13 @@ import TypewriterEffect from '../typewriter-effect';
 
 const projects = [
   {
+    id: '4',
+    title: 'Student Management System',
+    longDescription: 'A comprehensive student management system built with Java, featuring full CRUD (Create, Read, Update, Delete) operations. This desktop application provides an intuitive interface for managing student records, including personal details, course enrollment, and grades. It showcases robust data handling and a clean, object-oriented architecture.',
+    liveUrl: '#',
+    githubUrl: '#',
+  },
+  {
     id: '1',
     title: 'E-Commerce Platform',
     longDescription: 'A full-featured e-commerce platform built with Next.js, Stripe for payments, and a custom CMS for product management. It includes user authentication, order tracking, and a responsive design for a seamless shopping experience on any device. The architecture is designed for scalability and performance, using server-side rendering for fast initial page loads.',
