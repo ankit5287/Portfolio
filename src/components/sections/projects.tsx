@@ -29,7 +29,7 @@ const projects = [
     title: 'Data Visualization Dashboard',
     longDescription: 'An analytics dashboard for visualizing complex datasets. It uses D3.js and React to create interactive charts and graphs, allowing users to explore data and gain insights. The backend processes large volumes of data and provides a fast API for the frontend to consume.',
     liveUrl: '#',
-    githubUrl: '#',
+githumbUrl: '#',
   },
 ];
 

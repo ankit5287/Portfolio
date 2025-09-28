@@ -43,14 +43,12 @@ export default function ProjectCard({ project }: { project: Project }) {
       </CardContent>
       <CardFooter className="flex flex-col items-start gap-4">
         <div className="flex w-full flex-col space-y-2">
-          {project.liveUrl !== '#' && (
             <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="w-full">
               <Button variant="default" className="w-full">
                 <ExternalLink />
                 Live Site
               </Button>
             </a>
-          )}
           <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="w-full">
             <Button variant="outline" className="w-full">
               <Github />
