@@ -127,7 +127,7 @@ export default function Contact() {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold">Contact Information</h3>
               <p className="text-muted-foreground">
-                Feel free to reach out via email or connect with me on social media.
+                Always happy to connect and build
               </p>
               <div className="space-y-4">
                 <a href="mailto:ankitnandoliya32@gmail.com" className="flex items-center gap-4 transition-colors hover:text-primary">
