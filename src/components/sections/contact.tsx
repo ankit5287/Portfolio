@@ -125,9 +125,9 @@ export default function Contact() {
               Feel free to reach out via email or connect with me on social media.
             </p>
             <div className="space-y-4">
-              <a href="mailto:placeholder@example.com" className="flex items-center gap-4 transition-colors hover:text-primary">
+              <a href="mailto:ankitnandoliya32@gmail.com" className="flex items-center gap-4 transition-colors hover:text-primary">
                 <Mail className="h-6 w-6" />
-                <span>placeholder@example.com</span>
+                <span>ankitnandoliya32@gmail.com</span>
               </a>
               <div className="flex space-x-4">
                 <a href="#" target="_blank" rel="noopener noreferrer">
