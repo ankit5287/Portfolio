@@ -144,7 +144,7 @@ export default function Contact() {
                     </a>
                   </ScrollAnimation>
                   <ScrollAnimation delay={500}>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/ankit-nandoliya-425a1429b/" target="_blank" rel="noopener noreferrer">
                       <Button variant="outline" size="icon" className="transition-transform duration-500 ease-in-out hover:scale-110">
                         <Linkedin className="h-5 w-5" />
                          <span className="sr-only">LinkedIn</span>
