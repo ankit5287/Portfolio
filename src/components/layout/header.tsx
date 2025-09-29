@@ -46,13 +46,15 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
-        <a href="#" className="flex items-center gap-2 font-bold text-lg">
-          <Code2 className="h-6 w-6 text-primary" />
-          <div className="flex flex-col leading-tight">
-            <span>Ankit</span>
-            <span>Nandoliya</span>
-          </div>
-        </a>
+        <div className="flex items-center gap-4">
+          <a href="#" className="flex items-center gap-2 font-bold text-lg">
+            <Code2 className="h-6 w-6 text-primary" />
+            <div className="flex flex-col leading-tight">
+              <span>Ankit</span>
+              <span>Nandoliya</span>
+            </div>
+          </a>
+        </div>
         <div className="flex items-center gap-4">
           <nav className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => (
