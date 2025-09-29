@@ -5,6 +5,7 @@ import { Code2, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
+import { ThemeSwitcher } from '../theme-switcher';
 
 const navLinks = [
   { href: '#hero', label: 'Home' },
@@ -56,8 +57,10 @@ export default function Header() {
           {navLinks.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
+           <ThemeSwitcher />
         </nav>
         <div className="flex items-center gap-2 md:hidden">
+         <ThemeSwitcher />
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
