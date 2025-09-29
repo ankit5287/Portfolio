@@ -74,12 +74,6 @@ export default function Header() {
             <SheetContent side="right" className="w-auto h-auto bg-black/5 backdrop-blur-lg m-2 rounded-lg p-2">
               <div className="flex h-full flex-col">
                  <div className="flex justify-end">
-                  <SheetClose asChild>
-                    <Button variant="ghost" size="icon" className="h-5 w-5">
-                      <X className="h-4 w-4" />
-                      <span className="sr-only">Close</span>
-                    </Button>
-                  </SheetClose>
                 </div>
                 <nav className="flex flex-1 flex-col items-start justify-center gap-2">
                   {navLinks.map((link, index) => (
