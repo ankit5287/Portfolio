@@ -50,6 +50,9 @@ export default function Header() {
           <a href="#" className="flex items-center gap-2 font-bold text-lg">
             <Code2 className="h-6 w-6 text-primary" />
             <div className="flex flex-col leading-tight">
+              <span className="hidden md:block -mb-2">
+                <TimeWeatherWidget />
+              </span>
               <span>Ankit</span>
               <span>Nandoliya</span>
             </div>
