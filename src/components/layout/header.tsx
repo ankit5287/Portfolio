@@ -1,10 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Code2, Menu, X } from 'lucide-react';
+import { Code2, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
+import TimeWeatherWidget from '../time-weather-widget';
 
 const navLinks = [
   { href: '#hero', label: 'Home' },
@@ -52,17 +53,22 @@ export default function Header() {
             <span>Nandoliya</span>
           </div>
         </a>
-        <nav className="hidden items-center gap-8 md:flex">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="font-bold text-muted-foreground transition-all duration-300 hover:text-foreground hover:scale-110"
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
+        <div className="flex items-center gap-4">
+          <nav className="hidden items-center gap-8 md:flex">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="font-bold text-muted-foreground transition-all duration-300 hover:text-foreground hover:scale-110"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+          <div className="hidden md:block">
+            <TimeWeatherWidget />
+          </div>
+        </div>
         <div className="flex items-center gap-2 md:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
