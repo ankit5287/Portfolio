@@ -24,7 +24,7 @@ export default function About() {
           <Card className="bg-transparent shadow-lg transition-transform duration-500 ease-in-out hover:scale-105">
             <CardContent className="p-8">
               <div className="text-left">
-                <p className="mt-1 text-lg text-accent-foreground">
+                <p className="mt-1 text-lg text-primary">
                   Computer Engineering Student
                 </p>
                 <p className="mt-4 text-muted-foreground">
