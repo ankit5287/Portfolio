@@ -61,7 +61,7 @@ export default function Header() {
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
-                <Menu />
+                <Menu className="h-5 w-5" />
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
@@ -76,7 +76,7 @@ export default function Header() {
                         </Button>
                     </SheetClose>
                 </div>
-                <nav className="flex flex-1 flex-col items-center justify-center gap-8 text-lg">
+                <nav className="flex flex-1 flex-col items-center justify-center gap-8 text-sm">
                   {navLinks.map((link, index) => (
                      <div key={link.href} className={cn('opacity-0 animate-fade-in-up', isMobileMenuOpen && 'opacity-100')}>
                       <NavLink
