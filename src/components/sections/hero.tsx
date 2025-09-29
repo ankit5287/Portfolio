@@ -27,14 +27,14 @@ export default function Hero() {
             </p>
           </ScrollAnimation>
           <ScrollAnimation delay={400}>
-            <div className="mt-8 flex justify-center gap-4">
-              <a href="#projects">
-                <Button className="bg-foreground text-background hover:bg-foreground/90">
+            <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <a href="#projects" className="w-full sm:w-auto">
+                <Button className="w-full bg-foreground text-background hover:bg-foreground/90 sm:w-auto">
                   <Briefcase className="mr-2" /> Projects
                 </Button>
               </a>
-              <a href="/Ankit-Nandoliya-CV.pdf" download>
-                <Button variant="outline">
+              <a href="/Ankit-Nandoliya-CV.pdf" download className="w-full sm:w-auto">
+                <Button variant="outline" className="w-full sm:w-auto">
                   <ArrowDownToLine className="mr-2" /> Download CV
                 </Button>
               </a>
