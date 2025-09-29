@@ -49,10 +49,6 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <a href="#" className="flex items-center gap-2 font-bold text-lg">
             <Code2 className="h-6 w-6 text-primary" />
-            <div className="flex flex-col leading-tight">
-              <span>Ankit</span>
-              <span>Nandoliya</span>
-            </div>
           </a>
         </div>
         <div className="flex items-center gap-4">
@@ -78,9 +74,6 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[20%] bg-black/5 backdrop-blur-lg p-2">
               <div className="flex h-full flex-col items-start gap-4">
-                <div className="text-left">
-                  <div className="mt-2 text-xs font-bold">Ankit Nandoliya</div>
-                </div>
                  <nav className="flex flex-1 flex-col items-start justify-center gap-1">
                   {navLinks.map((link, index) => (
                      <div key={link.href} className={cn('opacity-0 animate-fade-in-up', isMobileMenuOpen && 'opacity-100')}>
