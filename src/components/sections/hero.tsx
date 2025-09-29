@@ -11,6 +11,11 @@ export default function Hero() {
     <section id="hero" className="py-16 md:py-24">
       <div className="container mx-auto max-w-5xl px-4">
         <div className="text-center">
+          <ScrollAnimation delay={0}>
+            <div className="mb-4 flex justify-center">
+              <TimeWeatherWidget />
+            </div>
+          </ScrollAnimation>
           <ScrollAnimation delay={100}>
             <h1 className="mb-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               <TypewriterEffect text="Ankit Nandoliya" />
