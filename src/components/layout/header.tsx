@@ -65,11 +65,9 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[250px] bg-background/80 backdrop-blur-xl">
-              <div className="flex h-full flex-col">
-                <div className="flex items-center justify-between border-b pb-4">
-                </div>
-                <nav className="mt-8 flex flex-col gap-6">
+            <SheetContent side="right" className="w-full bg-background/80 backdrop-blur-xl">
+              <div className="flex h-full flex-col items-center justify-center">
+                <nav className="flex flex-col items-center gap-8 text-xl">
                   {navLinks.map((link, index) => (
                      <div key={link.href} className={cn('opacity-0 animate-fade-in-up', isMobileMenuOpen && 'opacity-100')}>
                       <NavLink
