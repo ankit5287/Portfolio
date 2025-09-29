@@ -41,9 +41,8 @@ export default function Header() {
   return (
     <header
       className={cn(
-        'sticky top-0 z-50 w-full border-b transition-all duration-300',
-        isScrolled ? 'border-border' : 'border-transparent',
-        'bg-background/95 backdrop-blur-xl'
+        'sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-xl transition-all duration-300',
+        isScrolled ? 'border-border' : 'border-transparent'
       )}
     >
       <div className="container mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
