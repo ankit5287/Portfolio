@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Code2, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
@@ -65,9 +65,18 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[30%] h-[50%] bg-black/5 backdrop-blur-lg m-2 rounded-lg">
-              <div className="flex h-full flex-col items-center justify-center">
-                <nav className="flex flex-col items-center gap-8 text-lg">
+            <SheetContent side="right" className="w-[30%] h-[50%] bg-black/5 backdrop-blur-lg m-2 rounded-lg p-0">
+              <div className="flex h-full flex-col">
+                <div className="flex items-center justify-between p-4 border-b border-gray-700">
+                    <span className="font-bold text-sm">Ankit Nandoliya</span>
+                    <SheetClose asChild>
+                        <Button variant="ghost" size="icon">
+                            <X className="h-4 w-4" />
+                            <span className="sr-only">Close</span>
+                        </Button>
+                    </SheetClose>
+                </div>
+                <nav className="flex flex-1 flex-col items-center justify-center gap-8 text-lg">
                   {navLinks.map((link, index) => (
                      <div key={link.href} className={cn('opacity-0 animate-fade-in-up', isMobileMenuOpen && 'opacity-100')}>
                       <NavLink
