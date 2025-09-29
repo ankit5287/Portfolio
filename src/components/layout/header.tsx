@@ -30,7 +30,7 @@ export default function Header() {
     <a
       href={href}
       onClick={onClick}
-      className="text-muted-foreground transition-all duration-300 hover:text-foreground hover:scale-110"
+      className="font-bold text-muted-foreground transition-all duration-300 hover:text-foreground hover:scale-110"
       style={{ animationDelay: `${delay}ms`}}
     >
       {label}
