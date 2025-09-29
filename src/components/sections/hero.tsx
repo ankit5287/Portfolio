@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="container mx-auto max-w-5xl px-4">
         <div className="text-center">
           <ScrollAnimation>
-            <h1 className="mb-4 font-mono text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h1 className="mb-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               <TypewriterEffect text="Ankit Nandoliya" />
             </h1>
           </ScrollAnimation>
