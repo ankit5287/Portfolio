@@ -65,7 +65,7 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[250px] bg-background/95 backdrop-blur-xl">
+            <SheetContent side="right" className="w-[250px] bg-background/80 backdrop-blur-xl">
               <div className="flex h-full flex-col">
                 <div className="flex items-center justify-between border-b pb-4">
                    <a href="#" className="flex items-center gap-2 font-bold text-lg" onClick={() => setIsMobileMenuOpen(false)}>
