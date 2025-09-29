@@ -17,16 +17,11 @@ const navLinks = [
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isNameVisible, setIsNameVisible] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const heroSection = document.getElementById('hero');
-      const heroHeight = heroSection ? heroSection.offsetHeight : 0;
-      
       setIsScrolled(window.scrollY > 10);
-      setIsNameVisible(window.scrollY > heroHeight - 80);
     };
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Run on mount to set initial state
@@ -50,7 +45,7 @@ export default function Header() {
         'sticky top-0 z-50 w-full border-b transition-all duration-300',
         isScrolled
           ? 'border-border bg-background/80 backdrop-blur-md'
-          : 'border-transparent'
+          : 'border-transparent bg-background/5'
       )}
     >
       <div className="container mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
@@ -59,10 +54,7 @@ export default function Header() {
             <Code2 className="h-6 w-6 text-primary" />
           </a>
           <span
-            className={cn(
-              'font-bold text-foreground transition-all duration-500',
-              isNameVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
-            )}
+            className='font-bold text-foreground transition-all duration-500'
           >
             Ankit Nandoliya
           </span>
