@@ -71,7 +71,6 @@ export default function Header() {
                     <span className="font-bold text-sm">Ankit Nandoliya</span>
                     <SheetClose asChild>
                         <Button variant="ghost" size="icon">
-                            <X className="h-4 w-4" />
                             <span className="sr-only">Close</span>
                         </Button>
                     </SheetClose>
