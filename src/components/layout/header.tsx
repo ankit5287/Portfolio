@@ -68,13 +68,6 @@ export default function Header() {
             <SheetContent side="right" className="w-[250px] bg-background/80 backdrop-blur-xl">
               <div className="flex h-full flex-col">
                 <div className="flex items-center justify-between border-b pb-4">
-                   <a href="#" className="flex items-center gap-2 font-bold text-lg" onClick={() => setIsMobileMenuOpen(false)}>
-                    <Code2 className="h-6 w-6 text-primary" />
-                    <div className="flex flex-col leading-tight">
-                      <span>Ankit</span>
-                      <span>Nandoliya</span>
-                    </div>
-                  </a>
                 </div>
                 <nav className="mt-8 flex flex-col gap-6">
                   {navLinks.map((link, index) => (
