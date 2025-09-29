@@ -76,7 +76,7 @@ export default function Header() {
                         </Button>
                     </SheetClose>
                 </div>
-                <nav className="flex flex-1 flex-col items-center justify-center gap-8 text-sm">
+                <nav className="flex flex-1 flex-col items-start justify-center gap-8 p-8 text-sm">
                   {navLinks.map((link, index) => (
                      <div key={link.href} className={cn('opacity-0 animate-fade-in-up', isMobileMenuOpen && 'opacity-100')}>
                       <NavLink
