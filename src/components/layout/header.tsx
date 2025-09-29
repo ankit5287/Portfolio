@@ -67,9 +67,6 @@ export default function Header() {
               </a>
             ))}
           </nav>
-          <div className="hidden md:block">
-            <TimeWeatherWidget />
-          </div>
         </div>
         <div className="flex items-center gap-2 md:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -82,7 +79,6 @@ export default function Header() {
             <SheetContent side="right" className="w-[20%] bg-black/5 backdrop-blur-lg p-2">
               <div className="flex h-full flex-col items-start gap-4">
                 <div className="text-left">
-                  <TimeWeatherWidget />
                   <div className="mt-2 text-xs font-bold">Ankit Nandoliya</div>
                 </div>
                  <nav className="flex flex-1 flex-col items-start justify-center gap-1">
