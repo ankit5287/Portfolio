@@ -8,7 +8,7 @@ const projects = [
     title: 'Student Management System',
     longDescription: 'A comprehensive student management system built with Java, featuring full CRUD (Create, Read, Update, Delete) operations. This desktop application provides an intuitive interface for managing student records, including personal details, course enrollment, and grades. It showcases robust data handling and a clean, object-oriented architecture.',
     liveUrl: '#',
-    githubUrl: 'https://github.com/ankit5287',
+    githubUrl: 'https://github.com/ankit5287/Student-Management-System',
   },
   {
     id: '5',
