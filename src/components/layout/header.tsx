@@ -75,12 +75,6 @@ export default function Header() {
                       <span>Nandoliya</span>
                     </div>
                   </a>
-                  <SheetTrigger asChild>
-                    <Button variant="ghost" size="icon">
-                      <X />
-                      <span className="sr-only">Close menu</span>
-                    </Button>
-                  </SheetTrigger>
                 </div>
                 <nav className="mt-8 flex flex-col gap-6">
                   {navLinks.map((link, index) => (
