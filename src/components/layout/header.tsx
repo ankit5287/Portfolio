@@ -30,7 +30,7 @@ export default function Header() {
     <a
       href={href}
       onClick={onClick}
-      className="font-bold text-muted-foreground transition-all duration-300 hover:text-foreground hover:scale-110"
+      className="font-normal text-xs text-foreground transition-all duration-300 hover:text-primary hover:scale-110"
       style={{ animationDelay: `${delay}ms`}}
     >
       {label}
@@ -54,7 +54,13 @@ export default function Header() {
         </a>
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
-            <NavLink key={link.href} {...link} />
+            <a
+              key={link.href}
+              href={link.href}
+              className="font-bold text-muted-foreground transition-all duration-300 hover:text-foreground hover:scale-110"
+            >
+              {link.label}
+            </a>
           ))}
         </nav>
         <div className="flex items-center gap-2 md:hidden">
@@ -65,9 +71,17 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-auto h-auto bg-black/5 backdrop-blur-lg m-2 rounded-lg p-4">
+            <SheetContent side="right" className="w-auto h-auto bg-black/5 backdrop-blur-lg m-2 rounded-lg p-2">
               <div className="flex h-full flex-col">
-                <nav className="flex flex-1 flex-col items-start justify-center gap-4 text-sm">
+                 <div className="flex justify-end">
+                  <SheetClose asChild>
+                    <Button variant="ghost" size="icon" className="h-5 w-5">
+                      <X className="h-4 w-4" />
+                      <span className="sr-only">Close</span>
+                    </Button>
+                  </SheetClose>
+                </div>
+                <nav className="flex flex-1 flex-col items-start justify-center gap-2">
                   {navLinks.map((link, index) => (
                      <div key={link.href} className={cn('opacity-0 animate-fade-in-up', isMobileMenuOpen && 'opacity-100')}>
                       <SheetClose asChild>
