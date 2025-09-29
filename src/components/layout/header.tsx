@@ -65,7 +65,7 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[40%] h-[50%] bg-black/5 backdrop-blur-lg m-2 rounded-lg">
+            <SheetContent side="right" className="w-[30%] h-[50%] bg-black/5 backdrop-blur-lg m-2 rounded-lg">
               <div className="flex h-full flex-col items-center justify-center">
                 <nav className="flex flex-col items-center gap-8 text-lg">
                   {navLinks.map((link, index) => (
