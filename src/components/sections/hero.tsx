@@ -4,12 +4,16 @@ import TypewriterEffect from '../typewriter-effect';
 import { Button } from '@/components/ui/button';
 import { ArrowDownToLine, Briefcase } from 'lucide-react';
 import ScrollAnimation from '../scroll-animation';
+import TimeWeatherWidget from '../time-weather-widget';
 
 export default function Hero() {
   return (
     <section id="hero" className="py-16 md:py-24">
       <div className="container mx-auto max-w-5xl px-4">
         <div className="text-center">
+          <div className="mb-6 flex justify-center">
+            <TimeWeatherWidget />
+          </div>
           
           <ScrollAnimation delay={100}>
             <h1 className="mb-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
