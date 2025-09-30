@@ -13,9 +13,6 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   title: 'MiniPort',
   description: 'A minimal personal portfolio.',
-  icons: {
-    icon: 'data:;base64,iVBORw0KGgo=',
-  },
 };
 
 export default function RootLayout({
