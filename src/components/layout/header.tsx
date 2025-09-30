@@ -5,6 +5,7 @@ import { Code2, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
+import TimeWeatherWidget from '../time-weather-widget';
 
 const navLinks = [
   { href: '#hero', label: 'Home' },
@@ -74,6 +75,9 @@ export default function Header() {
           </nav>
         </div>
         <div className="flex items-center gap-2 md:hidden">
+          <div className="md:hidden">
+            <TimeWeatherWidget />
+          </div>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
