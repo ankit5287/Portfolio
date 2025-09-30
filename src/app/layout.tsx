@@ -11,8 +11,9 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'MiniPort',
+  title: 'Ankit Nandoliya',
   description: 'A minimal personal portfolio.',
+  icons: '',
 };
 
 export default function RootLayout({
