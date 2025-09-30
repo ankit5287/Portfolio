@@ -48,8 +48,8 @@ export default function Header() {
           : 'border-transparent bg-background/5'
       )}
     >
-      <div className="container mx-auto flex h-24 items-center justify-between px-4">
-        <div className="flex items-center gap-4">
+      <div className="container mx-auto flex h-24 items-center justify-between">
+        <div className="flex items-center gap-4 pl-4 md:pl-0">
           <div className="flex flex-col">
             <span
               className='font-bold text-foreground transition-all duration-500'
@@ -58,7 +58,7 @@ export default function Header() {
             </span>
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 pr-4 md:pr-0">
           <nav className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => (
               <a
@@ -71,7 +71,7 @@ export default function Header() {
             ))}
           </nav>
         </div>
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 pr-4 md:hidden">
           <div className="md:hidden">
             <TimeWeatherWidget />
           </div>
