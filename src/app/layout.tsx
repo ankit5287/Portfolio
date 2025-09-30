@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: 'MiniPort',
   description: 'A minimal personal portfolio.',
   icons: {
-    icon: [],
+    icon: 'data:;base64,iVBORw0KGgo=',
   },
 };
 
