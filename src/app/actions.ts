@@ -2,6 +2,8 @@
 
 import { z } from 'zod';
 import { summarizeProjectDescriptions } from '@/ai/flows/summarize-project-descriptions';
+import { db } from '@/lib/firebase';
+import { collection, addDoc } from 'firebase/firestore';
 
 export async function getSummary(projectDescription: string) {
   try {
@@ -22,9 +24,14 @@ const ContactFormSchema = z.object({
 export async function handleContactForm(data: z.infer<typeof ContactFormSchema>) {
   try {
     const parsedData = ContactFormSchema.parse(data);
-    // In a real app, you would process this data (e.g., send an email, save to DB).
-    // For this demo, we just log it to the server console.
-    console.log('Contact form submitted:', parsedData);
+    
+    // Save to Firestore
+    await addDoc(collection(db, 'contacts'), {
+      ...parsedData,
+      submittedAt: new Date(),
+    });
+
+    console.log('Contact form submitted and saved to Firestore:', parsedData);
     return { success: true, message: 'Form submitted successfully.' };
   } catch (error) {
     console.error('Error handling contact form:', error);
