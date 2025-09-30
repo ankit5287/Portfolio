@@ -58,7 +58,7 @@ export default function Header() {
             </span>
           </div>
         </div>
-        <div className="flex items-center gap-4 pr-4">
+        <div className="flex items-center gap-4">
           <nav className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => (
               <a
