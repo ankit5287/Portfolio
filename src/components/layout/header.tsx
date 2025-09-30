@@ -48,16 +48,19 @@ export default function Header() {
           : 'border-transparent bg-background/5'
       )}
     >
-      <div className="container mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
+      <div className="container mx-auto flex h-24 items-center justify-between px-4">
         <div className="flex items-center gap-4">
-          <a href="#" className="flex items-center gap-2 font-bold text-lg">
-            <Code2 className="h-6 w-6 text-primary" />
+          <a href="#" className="flex items-start gap-2 font-bold text-lg">
+            <Code2 className="h-6 w-6 text-primary mt-1" />
           </a>
-          <span
-            className='font-bold text-foreground transition-all duration-500'
-          >
-            Ankit Nandoliya
-          </span>
+          <div className="flex flex-col">
+            <span
+              className='font-bold text-foreground transition-all duration-500'
+            >
+              Ankit Nandoliya
+            </span>
+            <TimeWeatherWidget />
+          </div>
         </div>
         <div className="flex items-center gap-4">
           <nav className="hidden items-center gap-8 md:flex">
