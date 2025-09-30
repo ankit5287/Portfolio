@@ -22,7 +22,7 @@ const projects = [
     title: 'Bank Link Integrated Service',
     longDescription: 'Developed a secure web application that uses AI for real-time transaction analysis and classification after linking to user bank data. This FinTech service provides predictive financial insights through an intuitive, modern interface.',
     liveUrl: '#',
-    githubUrl: 'https://github.com/ankit5287/Bank-Link-Integrated-Services-',
+    githubUrl: 'https://github.com/simitmodi/Bank-Link-Integrated-Services',
   },
 ];
 
