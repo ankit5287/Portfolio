@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Code2, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -51,7 +51,6 @@ export default function Header() {
       <div className="container mx-auto flex h-24 items-center justify-between px-4">
         <div className="flex items-center gap-4">
           <a href="#" className="flex items-start gap-2 font-bold text-lg">
-            <Code2 className="h-6 w-6 text-primary mt-1" />
           </a>
           <div className="flex flex-col">
             <span
