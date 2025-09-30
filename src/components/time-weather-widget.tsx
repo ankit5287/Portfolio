@@ -24,7 +24,7 @@ export default function TimeWeatherWidget() {
   };
 
   return (
-    <div className="inline-flex items-center gap-4 rounded-full bg-secondary px-4 py-2 text-sm text-secondary-foreground">
+    <div className="inline-flex items-center gap-4 rounded-full bg-secondary/80 backdrop-blur-sm border border-border px-4 py-2 text-sm text-secondary-foreground shadow-lg">
       <span>{time}</span>
       <div className="h-4 w-px bg-muted-foreground/50"></div>
       <div className="flex items-center gap-2">

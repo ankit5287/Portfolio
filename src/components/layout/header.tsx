@@ -5,7 +5,6 @@ import { Code2, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import TimeWeatherWidget from '../time-weather-widget';
 
 const navLinks = [
   { href: '#hero', label: 'Home' },
@@ -59,7 +58,6 @@ export default function Header() {
             >
               Ankit Nandoliya
             </span>
-            <TimeWeatherWidget />
           </div>
         </div>
         <div className="flex items-center gap-4">
