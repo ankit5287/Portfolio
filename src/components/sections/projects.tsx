@@ -24,6 +24,13 @@ const projects = [
     liveUrl: '#',
     githubUrl: 'https://github.com/simitmodi/Bank-Link-Integrated-Services',
   },
+  {
+    id: '6',
+    title: 'Version 2-Stride',
+    longDescription: 'A customer-centric appointment booking system that streamlines the scheduling process. This application allows customers to easily book, manage, and track their appointments, enhancing user experience and operational efficiency.',
+    liveUrl: '#',
+    githubUrl: 'https://github.com/ankit5287',
+  },
 ];
 
 export default function Projects() {
