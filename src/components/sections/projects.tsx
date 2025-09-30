@@ -15,7 +15,7 @@ const projects = [
     title: 'Studiova',
     longDescription: 'A web application built with Django, featuring a robust backend with the Django admin panel and SQLite3 for database management. It includes secure user authentication with login and sign-up functionality, providing a seamless user experience.',
     liveUrl: '#',
-    githubUrl: 'https://github.com/ankit5287',
+    githubUrl: 'https://github.com/ankit5287/Studiova.git',
   },
   {
     id: '3',
