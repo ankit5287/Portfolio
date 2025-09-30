@@ -50,8 +50,6 @@ export default function Header() {
     >
       <div className="container mx-auto flex h-24 items-center justify-between px-4">
         <div className="flex items-center gap-4">
-          <a href="#" className="flex items-start gap-2 font-bold text-lg">
-          </a>
           <div className="flex flex-col">
             <span
               className='font-bold text-foreground transition-all duration-500'
