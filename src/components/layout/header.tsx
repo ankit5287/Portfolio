@@ -49,7 +49,7 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto flex h-24 items-center justify-between">
-        <div className="flex items-center gap-4 pl-4 md:pl-0">
+        <div className="flex items-center gap-4 pl-4">
           <div className="flex flex-col">
             <span
               className='font-bold text-foreground transition-all duration-500'
@@ -58,7 +58,7 @@ export default function Header() {
             </span>
           </div>
         </div>
-        <div className="flex items-center gap-4 pr-4 md:pr-0">
+        <div className="flex items-center gap-4 pr-4">
           <nav className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => (
               <a
