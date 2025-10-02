@@ -32,7 +32,7 @@ export default function Header() {
     <a
       href={href}
       onClick={onClick}
-      className="font-normal text-xs text-foreground transition-all duration-300 hover:text-primary hover:scale-110"
+      className="font-normal text-xs text-foreground transition-all duration-300 hover:text-primary hover:scale-110 py-2"
       style={{ animationDelay: `${delay}ms`}}
     >
       {label}
@@ -84,7 +84,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[20%] bg-black/5 backdrop-blur-lg">
               <div className="flex h-full flex-col items-center justify-center">
-                 <nav className="flex flex-col items-start gap-4">
+                 <nav className="flex flex-col items-start">
                   {navLinks.map((link, index) => (
                      <div key={link.href} className={cn('opacity-0 animate-fade-in-up', isMobileMenuOpen && 'opacity-100')}>
                       <SheetClose asChild>
