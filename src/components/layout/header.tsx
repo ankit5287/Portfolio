@@ -49,7 +49,7 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto flex h-24 items-center justify-between">
-        <div className="flex items-center gap-4 pl-4 md:pl-2">
+        <div className="flex items-center gap-4 pl-8">
           <div className="flex flex-col">
             <span
               className='font-bold text-foreground transition-all duration-500'
@@ -82,7 +82,7 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[40%] bg-black/5 backdrop-blur-lg p-2">
+            <SheetContent side="right" className="w-[40%] bg-black/5 backdrop-blur-lg p-2 h-[40vh] top-1/2 -translate-y-1/2 rounded-l-lg">
               <div className="flex h-full flex-col items-start gap-4">
                  <nav className="flex flex-1 flex-col items-start justify-center gap-1">
                   {navLinks.map((link, index) => (
