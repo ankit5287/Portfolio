@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import TimeWeatherWidget from '../time-weather-widget';
+import { ThemeToggle } from '../theme-toggle';
 
 const navLinks = [
   { href: '#hero', label: 'Home' },
@@ -97,6 +98,9 @@ export default function Header() {
                     </div>
                   ))}
                 </nav>
+                <div className="mt-auto w-full flex justify-center pb-4">
+                  <ThemeToggle />
+                </div>
               </div>
             </SheetContent>
           </Sheet>
